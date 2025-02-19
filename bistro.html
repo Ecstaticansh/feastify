@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BISTRO - Indian Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BISTRO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to BISTRO</h2>
+                <p>Enjoy the best Indian food in town!</p>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="container">
+                <h2 align="center">Our Menu</h2>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <img src="images/Bistro/biryani.png" alt="Biryani">
+                        <h3>Biryani</h3>
+                        <p>Price: ₹200</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/Bistro/paneer_tikka.png" alt="Paneer Tikka">
+                        <h3>Paneer Tikka</h3>
+                        <p>Price: ₹180</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/Bistro/butter_chicken.png" alt="Butter Chicken">
+                        <h3>Butter Chicken</h3>
+                        <p>Price: ₹250</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/Bistro/naan.png" alt="Naan">
+                        <h3>Naan</h3>
+                        <p>Price: ₹50</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/Bistro/dal_makhni.png" alt="Dal Makhani">
+                        <h3>Dal Makhani</h3>
+                        <p>Price: ₹150</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FEASTIFY. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<style>
+    .menu-list {
+        display: flex;
+        justify-content: center; /* Center align the menu items */
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .menu-item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 200px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .menu-item h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .menu-item p {
+        color: #777;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+</style>
+</html>

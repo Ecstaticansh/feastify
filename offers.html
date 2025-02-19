@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers - Online Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>FEASTIFY</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Exclusive Offers</h2>
+                <p>Get the best deals and discounts on your favorite meals!</p>
+            </div>
+        </section>
+        <section class="offers">
+            <div class="container">
+                <h2 align="center">Today's Offers</h2>
+                <div class="offer-list">
+                    <div class="offer">
+                        <!--img src="offer1.jpg" alt="Offer 1"-->
+                        <h3>50% Off on All Pizzas</h3>
+                        <p><a href = "BREWTIFUL_CAFE.html">Valid at BREWTIFUL CAFE</a></p>
+                    </div>
+                    <div class="offer">
+                        <!--img src="offer2.jpg" alt="Offer 2"-->
+                        <h3>Buy 1 Get 1 Free</h3>
+                        <p><a href="maxi_cafe.html">Valid at MAXI CAFE</a></p>
+                    </div>
+                    <div class="offer">
+                        <!--img src="offer3.jpg" alt="Offer 3"-->
+                        <h3>20% Off on Orders Above RS 500</h3>
+                        <p><a href="bistro.html">Valid at BISTRO</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Foodie. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<style>
+    .offer-list {
+        display: flex;
+        justify-content: center; /* Center align the offers */
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .offer {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .offer img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .offer h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .offer p {
+        color: #777;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+</style>
+</html>

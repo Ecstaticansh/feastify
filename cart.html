@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Cart</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="cart">
+            <div class="container">
+                <h2>Your Cart</h2>
+                <div class="cart-items">
+            
+                </div>
+                <div class="cart-total">
+                    <h3>Total: $<span id="cart-total">0.00</span></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section class="cart">
+            <div >
+                <button id="clear-cart" onclick="clearCart()">Clear Cart</button>
+                <button id="checkout" onclick="proceedToPayment()">Proceed to Payment</button>
+            </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Foodie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cartContainer = document.querySelector(".cart-items");
+            const cartTotal = document.getElementById("cart-total");
+            const clearCartBtn = document.getElementById("clear-cart");
+
+            function loadCart() {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                cartContainer.innerHTML = "";
+                let total = 0;
+
+                cart.forEach((item, index) => {
+                    let itemElement = document.createElement("div");
+                    itemElement.classList.add("cart-item");
+                    itemElement.innerHTML = `
+                        <p>${item.name} - $${item.price.toFixed(2)}</p>
+                        <button onclick="removeItem(${index})">Remove</button>
+                    `;
+                    cartContainer.appendChild(itemElement);
+                    total += item.price;
+                });
+
+                cartTotal.textContent = total.toFixed(2);
+            }
+
+            window.removeItem = function (index) {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                cart.splice(index, 1);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                loadCart();
+            };
+
+            clearCartBtn.addEventListener("click", function () {
+                localStorage.removeItem("cart");
+                loadCart();
+            });
+
+            loadCart();
+        });
+    </script>
+</body>
+</html> 

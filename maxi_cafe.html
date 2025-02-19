@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAXI CAFE - Chinese Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MAXI CAFE</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to MAXI CAFE</h2>
+                <p>Enjoy the best Chinese food in town!</p>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="container">
+                <h2 align="center">Our Menu</h2>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <img src="images/maxi/chowmein.png" alt="Noodles">
+                        <h3>Chow Mein</h3>
+                        <p>Price: ₹150</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/maxi/friedd.png" alt="Fried Rice">
+                        <h3>Fried Rice</h3>
+                        <p>Price: ₹120</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/maxi/schez chick.png" alt="Manchurian">
+                        <h3>Veg Manchurian</h3>
+                        <p>Price: ₹180</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/maxi/spring.png" alt="Spring Rolls">
+                        <h3>Spring Rolls</h3>
+                        <p>Price: ₹100</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/maxi/schezwan chick.png" alt="Szechuan Chicken">
+                        <h3>Szechuan Chicken</h3>
+                        <p>Price: ₹200</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/maxi/dmsum.png" alt="Dim Sum">
+                        <h3>Dim Sum</h3>
+                        <p>Price: ₹160</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MAXI CAFE. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<style>
+    .menu-list {
+        display: flex;
+        justify-content: center; /* Center align the menu items */
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-bottom: 40px; /* Add gap between menu items and footer */
+    }
+
+    .menu-item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 200px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .menu-item h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .menu-item p {
+        color: #777;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .menu-item button {
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .menu-item button:hover {
+        background-color: #ff4500;
+    }
+</style>
+</html>
